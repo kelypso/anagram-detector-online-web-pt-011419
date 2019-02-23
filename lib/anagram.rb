@@ -13,7 +13,7 @@ class Anagram
     result = []
     anagrams.each do |w|
       array = w.split
-      result = array if array == word
+      result = w if array == word
     end
   end
 end
