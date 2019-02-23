@@ -1,3 +1,6 @@
+
+
+=begin
 class Anagram
   attr_accessor :word
 
@@ -11,3 +14,4 @@ class Anagram
     end
   end
 end
+=end
