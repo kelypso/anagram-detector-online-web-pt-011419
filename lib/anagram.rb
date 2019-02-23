@@ -15,6 +15,7 @@ class Anagram
       array = w.split
       result = w if array == word
     end
+    result
   end
 end
 
