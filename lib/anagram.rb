@@ -9,7 +9,12 @@ class Anagram
     # takes an array of possible anagrams
     # returns all matches in an array
     # if no matches exist, return an empty array
-    
+    word = @word.split
+    result = []
+    anagrams.each do |w|
+      array = w.split
+      result = array if array == word
+    end
   end
 end
 
