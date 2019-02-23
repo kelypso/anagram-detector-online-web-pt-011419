@@ -6,13 +6,9 @@ class Anagram
   end
 
   def match(array)
-    # takes an array of possible anagrams
-    # returns all matches in an array
-    # if no matches exist, return an empty array
-    array.select do |w|
-      w.split("").sort == @word.split("").sort
+    array.select do |w| # takes an array of possible anagrams
+      w.split("").sort == @word.split("").sort # returns all matches in an # array; if no matches exist, return an empty array
     end
-    result
   end
 end
 
