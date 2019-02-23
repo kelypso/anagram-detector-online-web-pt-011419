@@ -5,11 +5,11 @@ class Anagram
     @word = word
   end
 
-  def match(anagrams)
+  def match(array)
     # takes an array of possible anagrams
     # returns all matches in an array
     # if no matches exist, return an empty array
-    anagrams.select do |w|
+    array.select do |w|
       array = w.split
       result = w if array == word
     end
