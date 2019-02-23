@@ -10,8 +10,7 @@ class Anagram
     # returns all matches in an array
     # if no matches exist, return an empty array
     array.select do |w|
-      array = w.split
-      result = w if array == word
+      w.split("").sort == @word.split("").sort
     end
     result
   end
